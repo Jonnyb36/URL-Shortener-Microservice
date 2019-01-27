@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "26bb8fc1-f4ba-41bb-837a-25e221ccc26d",
+		"name": "URL_Shorterner_MicroService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "find-max-shortened-url-number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "original_url",
+							"value": "Jon",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "shortened",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/find-max-shortened-url-number",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"find-max-shortened-url-number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-one-by-URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "original_url",
+							"value": "Jon",
+							"type": "text"
+						},
+						{
+							"key": "shortened",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/find-one-by-URL",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"find-one-by-URL"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-and-save-url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/create-and-save-url",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"create-and-save-url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongoose-model-test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/mongoose-model",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"mongoose-model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find-max-shortened-url-number-and-return-entry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "original_url",
+							"value": "Jon",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "shortened",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/find-max-shortened-url-number-and-return-entry",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"find-max-shortened-url-number-and-return-entry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-and-save-many-url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\"original_url\":\"www.google.com\",\"shortened\":1},\n\t{\"original_url\":\"www.freecodecamp.com\",\"shortened\":2},\n\t{\"original_url\":\"forum.freecodecamp.com\",\"shortened\":3}\n]"
+				},
+				"url": {
+					"raw": "https://grateful-sled.glitch.me/_api/create-and-save-many-url",
+					"protocol": "https",
+					"host": [
+						"grateful-sled",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"_api",
+						"create-and-save-many-url"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
